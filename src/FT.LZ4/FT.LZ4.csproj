@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>netstandard1.6;netstandard2.0;net35;net451;net462</TargetFrameworks>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageId>FT.LZ4</PackageId>
+        <Version>1.0.0</Version>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Description>Fast compression algorithm</Description>
+        <PackageTags>LZ4, Compression</PackageTags>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+        <RepositoryUrl>https://github.com/ftlab/FT.LZ4</RepositoryUrl>
+    </PropertyGroup>
+
+    <ItemGroup Condition="'$(TargetFramework)' != 'net35'">
+        <PackageReference Include="System.Memory">
+            <Version>4.5.3</Version>
+        </PackageReference>
+    </ItemGroup>
+
+</Project>
