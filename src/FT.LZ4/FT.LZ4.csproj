@@ -24,4 +24,8 @@
         </PackageReference>
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="FT.xxHash" Version="1.0.0" />
+    </ItemGroup>
+
 </Project>

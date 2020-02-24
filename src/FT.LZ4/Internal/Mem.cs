@@ -45,7 +45,7 @@ namespace FT.LZ4
 
         /// <summary>Empty byte array.</summary>
 #if NET35 || NET451
-		public static readonly byte[] Empty = new byte[0];
+        public static readonly byte[] Empty = new byte[0];
 #else
         public static readonly byte[] Empty = Array.Empty<byte>();
 #endif
